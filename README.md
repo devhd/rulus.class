@@ -1,8 +1,9 @@
-###Object-oriented Layer for JavaScript
+###rulus.class — object-oriented layer for JavaScript
 ***
 
-Object-oriented layer as an independent JavaScript library
+Object-oriented layer (OOP) as an independent JavaScript library
 
+- 1.6 KB (minified & gzipped), 3.9 KB (minified)
 - base module in Rulus Framework
 - successful software company and great people behind it
 - usage in many business projects
