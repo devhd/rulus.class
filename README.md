@@ -1,7 +1,9 @@
-###Rulus Object-oriented Layer for JavaScript
+###Object-oriented Layer for JavaScript
 ***
 
 Object-oriented layer as an independent JavaScript library
+
+- base module in Rulus Framework
 - successful software company and great people behind it
 - usage in many business projects
 
