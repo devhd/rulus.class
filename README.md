@@ -1,7 +1,7 @@
-###Rulus OOP Layer
+###Rulus Object-oriented Layer for JavaScript
 ***
 
-Object oriented layer as an independent library
+Object-oriented layer as an independent JavaScript library
 - successful software company and great people behind it
 - usage in many business projects
 
