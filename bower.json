@@ -1,0 +1,32 @@
+{
+  "name": "rulus.class",
+  "version": "2.0.0",
+  "description": "object-oriented layer for JavaScript",
+  "homepage": "https://github.com/rulus/rulus.class",
+  "main": "rulus.class.js",
+  "authors": [
+    {
+      "name": "Rulus GmbH and other contributors",
+      "email": "info@rulus.com",
+      "url": "https://rulus.com"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "rulus",
+    "javascript",
+    "class",
+    "inheritance",
+    "oop",
+    "layer",
+    "library",
+    "framework"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
