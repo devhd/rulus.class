@@ -26,8 +26,6 @@
         registryConfig = {},
         invoke, define = global.define;
 
-    // begin "rulus.js" part
-
     /**
      * check if it's an array
      *
@@ -143,17 +141,13 @@
         return -1;
     };
 
-    // end "rulus.js" part
-
-    // begin "rulus.class"
-
     /**
      * Check if one object type is a descendant of all specified ancestor types.
      *
      *   r.isDescendant(descendantType, ancestorType1, [ancestorType2, ...])
      *   r.isDescendant(descendantObj, ancestorObj1, [ancestorObj2, ...])
      *
-     * @function r.isDescendant
+     * @function isDescendant
      *
      * @example
      *   r.isDescendant("kid.object", "parent.object") === true
@@ -190,7 +184,7 @@
     /**
      * Check if the object is child from an given type or object is from the same type as the given type
      *
-     * @function r.isInstanceOf
+     * @function isInstanceOf
      *
      * @example
      *  r.isInstanceOf("object", "parent.object") === true
@@ -205,7 +199,7 @@
     /**
      * Define a shortcut method for object creation
      *
-     * @function  r.shortCreate
+     * @function  shortCreate
      *
      * @example
      * //standard:
@@ -232,7 +226,7 @@
     /**
      * Method to define new object types
      *
-     * @function r.define
+     * @function define
      *
      * @param {string} type
      * @param {object} options
@@ -347,7 +341,7 @@
         return r.config(type, options);
     };
 
-    /**
+    /*
      * Find all parent (inherit) objects recursively
      *
      * @function getInheritAllInternal
@@ -376,7 +370,7 @@
         return inheritList;
     };
 
-    /**
+    /*
      * Find all parent (inherit) objects as an array
      *
      * @function getInheritAll
@@ -394,7 +388,7 @@
         return parents;
     };
 
-    /**
+    /*
      * Extend object configuration with inherit configuration
      *
      * @function extentObjConfig
@@ -408,7 +402,13 @@
         delete inheritConfigClone.init;
         merge(TRUE, objConfig, inheritConfigClone);
     };
-
+    /**
+     * Get Object prototype
+     * 
+     * @function config
+     * @param {String} type
+     * @return {Object} objs prototype
+     */
     r.config = rulusClass.config = function(type, options) {
         var objConfig = registryConfig[type],
             objectPrototype, inherit, objDef;
@@ -486,9 +486,9 @@
     };
 
     /**
+     *  Extend the objects prototype
      *
-     *
-     * @function r.config.extend
+     * @function config.extend
      * @param {String} objType
      * @param {Object} objConfigUpdate
      *
@@ -513,7 +513,7 @@
      *   r.config.find(function(objType){return objType != "example.type"});
      *   r.config.find(function(objType){return r.isDescendant (objType,"example.type")});
      *
-     * @function r.config.find
+     * @function config.find
      * @param {Function} func - filter function
      *
      * @return {Array}
@@ -603,7 +603,6 @@
         return rulusClass.objConstructor(new objConfig.rulusConstructor, createdBy, args, objConfig);
     };
 
-    // end "rulus.class"
     r.rulusClass = rulusClass;
 
     if (globalRulus == UNDEFINED) {
