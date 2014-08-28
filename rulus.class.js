@@ -603,6 +603,13 @@
         return rulusClass.objConstructor(new objConfig.rulusConstructor, createdBy, args, objConfig);
     };
 
+    // export some methods
+    r.isArray = isArray;
+    r.isObject = isObject;
+    r.invoke = invoke;
+    r.isPlainObject = isPlainObject;
+    r.merge = merge;
+    r.indexOf = indexOf;
     r.rulusClass = rulusClass;
 
     if (globalRulus == UNDEFINED) {
@@ -618,5 +625,4 @@
         merge(globalRulus, r);
         globalRulus.require && globalRulus.require.set("rulus/rulus.class");
     }
-
 })();

@@ -1,6 +1,9 @@
 # Changelog
 
 ### HEAD
+
+### 2.1.0 - 19.08.2014
+* export methods: isArray, isObject, invoke, isPlainObject, merge, indexOf
 * changelog added
 
 ### 2.0.0 - 19.08.2014
