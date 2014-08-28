@@ -2,7 +2,7 @@
 
 ### HEAD
 
-### 2.1.0 - 19.08.2014
+### 2.1.0 - 28.08.2014
 * export methods: isArray, isObject, invoke, isPlainObject, merge, indexOf
 * changelog added
 
