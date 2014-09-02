@@ -308,7 +308,7 @@
                 return method.apply(that, slice.call(arguments, 2));
             }
         } else {
-            r.log.error("'" + parentName + "' is not superclass from '" + that.type + "'");
+            //r.log.error("'" + parentName + "' is not superclass from '" + that.type + "'");
         }
     };
 
