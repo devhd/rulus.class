@@ -16,7 +16,7 @@ Object-oriented layer (OOP) as an independent JavaScript library
 
 Released under the MIT license
 
-Copyright (C) 2009-2014 Rulus GmbH, rulus.com
+Copyright (C) 2009-2015 Rulus GmbH, rulus.com
 
 You are free to use the Rulus Framework as long as the copyright header is left intact.
 
