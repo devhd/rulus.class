@@ -8,7 +8,7 @@ Object-oriented layer (OOP) as an independent JavaScript library
 - successful software company and great people behind it
 - usage in many business projects
 
-[Subscribe to newsletter](http://rulus.com/#!/newsletter)
+[Subscribe to newsletter](https://rulus.com/#!/newsletter)
 
 
 ###License
@@ -23,7 +23,7 @@ You are free to use the Rulus Framework as long as the copyright header is left 
 ###Backed by business
 ***
 
-Rulus Framework was originally developed and is actually supported by Rulus GmbH, http://rulus.com
+Rulus Framework was originally developed and is actually supported by Rulus GmbH, https://rulus.com
 
 ###Imprint
 ***
@@ -33,4 +33,4 @@ Brueckenkopfstr. 1/2
 69120 Heidelberg  
 Germany
 
-[Detailed imprint](http://rulus.com/#!/impressum)
+[Detailed imprint](https://rulus.com/#!/impressum)
