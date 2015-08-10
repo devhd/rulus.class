@@ -22,7 +22,6 @@ r.define("Human", {
     init: function() {
         this._gender = null
         this._power = null;
-        this._beauty = null;
     },
     setGender: function(gender) {
         this._gender = gender;
