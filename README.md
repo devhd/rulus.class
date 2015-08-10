@@ -18,42 +18,59 @@ Object-oriented layer (OOP) as an independent JavaScript library
 ####Define and manage your objects in JavaScript
 
 ```js
-r.define("Grandmother", {
-    init: function(v0) {
-        this.v0 = v0;
+r.define("Human", {
+    init: function() {
+        this._gender = null
+        this._power = null;
+        this._beauty = null;
     },
-    set: function(v1, v2, v3) {
-        this.v1 = v1;
-        this.v2 = v2;
-        this.v3 = v3;
+    setGender: function(gender) {
+        this._gender = gender;
+    },
+    getGender: function() {
+        return this._gender;
+    },
+    setPower: function(power) {
+        this._power = power;
+    },
+    getPower: function() {
+        return this._power;
     }
 });
 
-r.define("Parent", {
-    inherit: "Grandmother",
-    set: function(v1, v2) {
-        this.superCall("Grandmother", "set", v1, v2, "v3");
+r.define("Mother", {
+    inherit: "Human",
+    init: function() {
+        this.setGender("female");
+    }
+});
+
+r.define("Father", {
+    inherit: "Human",
+    init: function() {
+        this.setGender("male");
     }
 });
 
 r.define("Child", {
-    inherit: "Parent",
-    set: function(v1) {
-        this.superCall("Grandmother", "set", v1, "v2", "v3");
+    inherit: ["Mother", "Father"],
+    init: function(gender) {
+        this.setGender(gender);
+    },
+    setPower: function(power) {
+        // set the double of power using a parent method
+        this.superCall("Father", "setPower", 2 * power);
     }
 });
 
-var grandmother = r.create("Grandmother", "v0");
-grandmother.set("a", "b", "c");
+var mother = r.create("Mother");
+mother.setPower(80);
 
-var parent = r.create("Parent", "v0");
-parent.set("a", "b");
+var father = r.create("Father");
+father.setPower(100);
 
-var child = r.create("Child", "v0");
-child.set("a");
-
-var child2 = r.create("Child", "v0");
-child2.set("a");
+var child = r.create("Child", "male");
+child.setPower(90);  // will be set to the double value (180)
 ```
 
 ###License
