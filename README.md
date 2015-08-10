@@ -18,7 +18,7 @@ Object-oriented layer (OOP) as an independent JavaScript library
 ####Define and manage your objects in JavaScript
 
 ```js
-r.define("c1", {
+r.define("Grandmother", {
     init: function(v0) {
         this.v0 = v0;
     },
@@ -29,31 +29,31 @@ r.define("c1", {
     }
 });
 
-r.define("c2", {
-    inherit: "c1",
+r.define("Parent", {
+    inherit: "Grandmother",
     set: function(v1, v2) {
-        this.superCall("c1", "set", v1, v2, "v3");
+        this.superCall("Grandmother", "set", v1, v2, "v3");
     }
 });
 
-r.define("c3", {
-    inherit: "c2",
+r.define("Child", {
+    inherit: "Parent",
     set: function(v1) {
-        this.superCall("c1", "set", v1, "v2", "v3");
+        this.superCall("Grandmother", "set", v1, "v2", "v3");
     }
 });
 
-var c1 = r.create("c1", "v0");
-c1.set("a", "b", "c");
+var grandmother = r.create("Grandmother", "v0");
+grandmother.set("a", "b", "c");
 
-var c2 = r.create("c2", "v0");
-c2.set("a", "b");
+var parent = r.create("Parent", "v0");
+parent.set("a", "b");
 
-var c3 = r.create("c3", "v0");
-c3.set("a");
+var child = r.create("Child", "v0");
+child.set("a");
 
-var c3i2 = r.create("c3", "v0");
-c3i2.set("a");
+var child2 = r.create("Child", "v0");
+child2.set("a");
 ```
 
 ###License
