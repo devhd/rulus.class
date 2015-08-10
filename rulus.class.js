@@ -4,7 +4,6 @@
  * @license Released under the MIT license
  * 
  * @author @devhd
- * @maintainer @andrejev
  * @opensource
  * @public
  */
