@@ -11,5 +11,4 @@
 * bower.json added for Bower (package manager for the web)
 * package.json added for npm (node packaged modules)
 
-### 1.0.0
-* ...
+### Versions before 2.0.0 are not public.
