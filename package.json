@@ -1,6 +1,6 @@
 {
   "name": "rulus.class",
-  "version": "2.1.0",
+  "version": "2.2.0dev",
   "description": "object-oriented layer for JavaScript",
   "homepage": "https://rulus.com",
   "main": "rulus.class.js",
