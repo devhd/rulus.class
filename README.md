@@ -88,6 +88,4 @@ rulus.class was originally developed and is actually supported by Rulus GmbH
 
 [Homepage](https://rulus.com)
 
-[Subscribe to newsletter](https://rulus.com/#!/newsletter)
-
 [Legal notice](https://rulus.com/#!/impressum)
