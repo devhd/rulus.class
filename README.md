@@ -1,5 +1,6 @@
-###rulus.class — object-oriented layer for JavaScript
-***
+### rulus.class — object-oriented layer for JavaScript
+
+---
 
 Object-oriented layer (OOP) as an independent JavaScript library
 
@@ -7,17 +8,17 @@ Object-oriented layer (OOP) as an independent JavaScript library
 - usage in many business projects
 - open-sourced base module of Rulus Framework
 
-###Examples
+### Examples
 
-####Integrate rulus.class into your HTML page
+#### Integrate rulus.class into your HTML page
 
 ```html
 <script src="rulus.class.js"></script>
 ```
 
-####Define and manage your objects in JavaScript
+#### Define and manage your objects in JavaScript
 
-```js
+```javascript
 r.define("Human", {
     init: function() {
         this._gender = null
@@ -72,8 +73,9 @@ var child = r.create("Child", "male");
 child.setPower(90);  // will be set to the double value (180)
 ```
 
-###License
-***
+### License
+
+---
 
 Released under the MIT license
 
@@ -81,8 +83,9 @@ Copyright (C) 2009-2015 Rulus GmbH, rulus.com
 
 You are free to use the rulus.class as long as the copyright header is left intact.
 
-###Backed by business
-***
+### Backed by business
+
+---
 
 rulus.class was originally developed and is actually supported by Rulus GmbH
 
