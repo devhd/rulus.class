@@ -1,6 +1,6 @@
 /**
  * @module rulus.class
- * @copyright Copyright (C) 2009-2015 Rulus GmbH. All rights reserved.
+ * @copyright Copyright (C) 2009-2017 Rulus GmbH. All rights reserved.
  * @license Released under the MIT license
  * 
  * @author @devhd

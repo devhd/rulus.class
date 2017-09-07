@@ -79,7 +79,7 @@ child.setPower(90);  // will be set to the double value (180)
 
 Released under the MIT license
 
-Copyright (C) 2009-2015 Rulus GmbH, rulus.com
+Copyright (C) 2009-2017 Rulus GmbH, rulus.com
 
 You are free to use the rulus.class as long as the copyright header is left intact.
 
